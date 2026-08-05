@@ -1,0 +1,183 @@
+\begin{frame}{¿Qué son las apropiaciones?}
+\textbf{Apropiaciones:} son los \textbf{montos máximos autorizados por la Ley de Presupuesto} para ser comprometidos y ejecutados por una entidad pública.
+
+\vspace{1em}
+\begin{itemize}
+  \item Representan el límite legal de gasto por cada rubro presupuestal.
+  \item No implican ejecución automática ni gasto efectivo.
+  \item Solo el Congreso puede modificarlas.
+\end{itemize}
+
+\vspace{1em}
+\textit{Son el punto de partida del ciclo presupuestal.}
+\end{frame}
+
+\begin{frame}{¿Qué son los compromisos?}
+\textbf{Compromisos:} son actos administrativos que generan una obligación futura de pago por parte del Estado.
+
+\vspace{1em}
+\begin{itemize}
+  \item Se generan al contratar o adquirir bienes y servicios.
+  \item Disminuyen el saldo disponible de la apropiación.
+  \item Aún no son pagos, pero sí obligaciones asumidas formalmente.
+\end{itemize}
+
+\vspace{1em}
+\textit{Ejemplo: firma de contrato de obra pública.}
+\end{frame}
+
+\begin{frame}{¿Qué son las obligaciones?}
+\textbf{Obligaciones:} son los montos reconocidos como deuda cierta, exigible y cuantificada a favor de un tercero.
+
+\vspace{1em}
+\begin{itemize}
+  \item Surgen cuando el bien o servicio ha sido entregado o prestado.
+  \item Se sustentan con factura o documento equivalente.
+  \item Deben pagarse dentro de los plazos legales.
+\end{itemize}
+
+\vspace{1em}
+\textit{Ejemplo: recepción de una obra terminada.}
+\end{frame}
+
+\begin{frame}{¿Qué son los pagos?}
+\textbf{Pagos:} son las erogaciones efectivas de recursos públicos para cumplir con obligaciones previamente reconocidas.
+
+\vspace{1em}
+\begin{itemize}
+  \item Representan el último paso del ciclo presupuestal.
+  \item Requieren disponibilidad de caja (tesorería).
+  \item Pueden realizarse en el mismo año o en vigencias futuras.
+\end{itemize}
+
+\vspace{1em}
+\textit{Ejemplo: giro de fondos al contratista.}
+\end{frame}
+
+\begin{frame}{Ciclo de ejecución presupuestal en Colombia}
+\begin{center}
+\begin{tikzpicture}[
+  node distance=0.7cm,
+  every node/.style={draw, rectangle, rounded corners, minimum width=3.8cm, minimum height=1cm, align=center},
+  arrow/.style={->, thick}
+]
+
+\node (apropiacion) {Apropiación\\(autorización legal de gasto)};
+\node (compromiso) [below=of apropiacion] {Compromiso\\(acto administrativo que genera obligación)};
+\node (obligacion) [below=of compromiso] {Obligación\\(reconocimiento de deuda exigible)};
+\node (pago) [below=of obligacion] {Pago\\(salida efectiva de recursos)};
+
+\draw[arrow] (apropiacion) -- (compromiso);
+\draw[arrow] (compromiso) -- (obligacion);
+\draw[arrow] (obligacion) -- (pago);
+
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Ciclo de ejecución presupuestal en Colombia}
+\vspace{1em}
+\begin{itemize}
+  \item El ciclo puede abarcar más de una vigencia fiscal.
+  \item Solo los pagos generan una salida de caja efectiva.
+  \item En general, solo se considere como gasto cuando los recursos son \textbf{obligados}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{¿Qué es la ejecución presupuestal?}
+\textbf{Ejecución presupuestal:} es el grado en que las apropiaciones autorizadas en el presupuesto se convierten en obligaciones durante el año fiscal.
+
+\vspace{1em}
+\begin{itemize}
+  \item Mide cuánto del presupuesto aprobado va a ser irreversiblemente gastado.
+  \item Se expresa usualmente como el porcentaje de obligaciones frente a apropiaciones.
+\end{itemize}
+
+\vspace{1em}
+\textbf{Fórmula común:}
+\begin{equation*}
+\text{Ejecución (\%)} = \frac{\text{Obligaciones}}{\text{Apropiaciones}} \times 100
+\end{equation*}
+
+\vspace{1em}
+\textit{Una alta ejecución no siempre implica buena calidad del gasto.}
+\end{frame}
+
+\begin{frame}{¿Qué pasa si una apropiación no se compromete en la vigencia?}
+\begin{itemize}
+  \item Las \textbf{apropiaciones} son válidas solo durante la vigencia fiscal (normalmente un año).
+  \item Si al cierre de la vigencia una apropiación \textbf{no se compromete}, esa parte del presupuesto \textbf{se pierde} (pérdida de apropiación).
+  \item En consecuencia, los recursos \textbf{no comprometidos se liberan o se cancelan} y se pierde la posibilidad de uso.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{¿Qué pasa si un compromiso no se obliga en la vigencia?}
+\begin{itemize}
+  \item Si existe un \textbf{compromiso registrado pero no obligado}, puede convertirse en \textbf{reserva presupuestal}.
+  \item La reserva permite hacer el pago en el año siguiente, siempre que se haya comprometido oportunamente.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\textbf{En resumen:}
+\vspace{1em}
+\begin{itemize}
+  \item \textbf{Apropiación no comprometido} → se pierde.
+  \item \textbf{Compromiso no obligado} → se convierte en \textbf{reserva presupuestal}.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\vspace{1em}
+\textbf{Implicaciones:}
+\begin{itemize}
+  \item Las entidades buscan alcanzar a al menos comprometer los recursos para no perderlos.
+  \item Desde el punto de vista del cierre fiscal de la vigencia, una menor ejecución (las apropiaciones no alcanzan a obligarse) representa una mejora en el balance fiscal (aunque las reservas representan mayor presión fiscal para la vigencia siguiente).
+  \item El retraso en los pagos facilita el manejo de caja.   
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Organigrama simplificado del Ministerio de Hacienda}
+\begin{center}
+\begin{tikzpicture}[
+  every node/.style={rectangle, draw, align=center, rounded corners, font=\scriptsize, minimum width=3.2cm, minimum height=0.8cm},
+  node distance=0.6cm
+]
+
+% Nivel 1
+\node (ministro) {Ministro de Hacienda};
+
+% Nivel 2
+\node[below left=1.2cm and 1.2cm of ministro] (vicgen) {Viceministerio\\General};
+\node[below right=1.2cm and 1.2cm of ministro] (victec) {Viceministerio\\Técnico};
+
+% Nivel 3 - General
+\node[below=of vicgen] (dgp) {DGPPN\\Presupuesto};
+\node[below=of dgp] (dgcptn) {DGCPTN\\Crédito y Tesoro};
+\node[below=of dgcptn] (dgaf) {DGAF\\Apoyo Fiscal};
+
+% Nivel 3 - Técnico
+\node[below=of victec] (polmacro) {DGPM \\ Política \\ Macroeconómica};
+\node[below=of polmacro] (dgrees) {DGRESS\\Seguridad Social};
+
+% Conexiones
+\draw[->] (ministro) -- (vicgen);
+\draw[->] (ministro) -- (victec);
+
+\draw[->] (vicgen) -- (dgp);
+\draw[->] (dgp) -- (dgcptn);
+\draw[->] (dgcptn) -- (dgaf);
+
+\draw[->] (victec) -- (polmacro);
+\draw[->] (polmacro) -- (dgrees);
+
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+
+

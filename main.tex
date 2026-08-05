@@ -1,14 +1,201 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[aspectratio=169,10pt]{beamer}
 
-\title{FPC}
-\author{oliverpardo }
-\date{August 2026}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{longtable}
+\usepackage{threeparttablex}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{microtype}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{nccmath}
+\usepackage{cancel}
+\usepackage{gensymb}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{calc}
+\usepackage{tcolorbox}
+\usepackage{newfloat}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{pgf-pie}
+\usetikzlibrary{arrows.meta,mindmap,patterns,positioning,shapes.geometric}
+\usepgfplotslibrary{dateplot}
+\pgfplotsset{compat=1.18}
+\sisetup{output-decimal-marker={.}}
+
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\usetheme{Singapore}
+\usecolortheme{orchid}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}[page number]
+\setbeameroption{hide notes}
+
+\title[Finanzas Públicas Colombianas]{Finanzas Públicas Colombianas}
+\subtitle{Curso integrado y panorama fiscal}
+\author{Oliver Pardo, Andrés Garzón y Gabriel Millán}
+\institute{Pontificia Universidad Javeriana}
+\date{2026}
+
+\AtBeginSection[]{
+  \begin{frame}{Contenido}
+    \tableofcontents[currentsection,sectionstyle=show/shaded]
+  \end{frame}
+}
 
 \begin{document}
 
-\maketitle
+\begin{frame}
+  \titlepage
+\end{frame}
 
-\section{Introduction}
+\begin{frame}{Contenido}
+  \tableofcontents
+\end{frame}
+
+\section{Presentación del curso}
+\input{modules/fcp_intro.tex}
+
+\section{Sector público y contabilidad fiscal}
+\input{modules/fcp_gg.tex}
+
+\section{Ciclo presupuestal}
+\input{modules/fcp_ciclo.tex}
+
+\section{Antecedentes macrofiscales}
+\input{slides/Cover.tex}
+\input{slides/presentacion.tex}
+\input{slides/PIB.tex}
+\input{slides/Gasto.tex}
+\input{slides/Ingreso.tex}
+\input{slides/Balance.tex}
+\input{slides/Deuda.tex}
+\input{slides/intereses.tex}
+\input{slides/ingmonth.tex}
+\input{slides/pf2024.tex}
+\input{slides/pf2025.tex}
+\input{slides/pf2026.tex}
+\input{slides/DesIngreso.tex}
+\input{slides/des_gasto_2026.tex}
+\input{slides/des2_gas_2026.tex}
+\input{slides/VATRevenue.tex}
+\input{slides/GT.tex}
+\input{slides/RestoIngresosT.tex}
+\input{slides/liquidity.tex}
+\input{slides/cash.tex}
+\input{slides/reservas.tex}
+\input{slides/conc_ant_agg.tex}
+\input{slides/DesGasto.tex}
+\input{slides/DesDesGasto.tex}
+\input{slides/DesDesGasto2.tex}
+\input{slides/BalFEPC.tex}
+\input{slides/personal2025.tex}
+\input{slides/VF.tex}
+\input{slides/concant.tex}
+
+\section{La profundidad del problema fiscal}
+\input{slides/motivacion.tex}
+\input{slides/ajuste.tex}
+
+\section{Ingresos}
+\input{slides/Ingresos2.tex}
+\input{slides/estancamiento.tex}
+\input{slides/brecha.tex}
+\input{slides/parataxes.tex}
+\input{slides/rentPN.tex}
+\input{slides/resuingreso.tex}
+\input{slides/taxpolicies.tex}
+\input{slides/etaxrev.tex}
+\input{slides/TEVAT.tex}
+\input{slides/CITrate.tex}
+\input{slides/TECIT.tex}
+
+\section{Gastos}
+\input{slides/Gastos2.tex}
+\input{slides/DesGasPim.tex}
+\input{slides/DesTrans.tex}
+\input{slides/AjusteGasto.tex}
+\input{slides/resugasto.tex}
+
+\section{Perspectivas y financiamiento}
+\input{slides/RiesgoPais.tex}
+\input{slides/flexsemiflex.tex}
+\input{slides/debtforecast.tex}
+\input{slides/balanceforecast.tex}
+\input{slides/Tenedores.tex}
+\input{slides/PuntosConsolidacion.tex}
+\input{slides/VFforecast.tex}
+
+\section{Riesgos fiscales}
+\input{slides/Nomina.tex}
+\input{slides/pension_f.tex}
+\input{slides/upc.tex}
+\input{slides/ESGP.tex}
+\input{slides/aquiles.tex}
+\input{slides/Riesgos.tex}
+
+\section{Reformas}
+\input{slides/reformasinst.tex}
+\input{slides/solINV.tex}
+\input{slides/solFEPC.tex}
+\input{slides/solSalud.tex}
+\input{slides/solPensiones.tex}
+\input{slides/competences.tex}
+\input{slides/solSGP.tex}
+\input{slides/MasSGP.tex}
+
+\section{Viabilidad política del ajuste}
+\input{slides/ComentariosFinales.tex}
+
+\section{Comentarios finales}
+\input{slides/conclusiones.tex}
+
+\begin{frame}{}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{graficas/Cover.jpg}
+
+    \column{0.55\textwidth}
+    \centering
+    {\Large\textbf{Muchas gracias}}
+
+    \vspace{0.5cm}
+    \small
+    Oliver Pardo\\
+    Centro Javeriano de Competitividad\\
+    Pontificia Universidad Javeriana
+
+    \vspace{0.5cm}
+    \footnotesize
+    pardoo@javeriana.edu.co\\
+    X: @opardor
+  \end{columns}
+\end{frame}
 
 \end{document}

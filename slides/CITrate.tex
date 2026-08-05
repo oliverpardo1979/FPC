@@ -1,0 +1,24 @@
+\begin{frame}{La tarifa general de renta de las personas jurídicas fue 35\% en 2025}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=11.5cm,
+    height=6.8cm,
+    ylabel={Tarifa nominal (\%)},
+    grid=major,
+    xtick={2012,2013,...,2025},
+    x tick label style={rotate=90,anchor=east},
+    ymin=29,
+    ymax=36,
+    ytick={30,31,32,33,34,35}
+]
+\addplot[mark=square*,very thick] coordinates {
+    (2012,33) (2013,34) (2014,34) (2015,34) (2016,34) (2017,34)
+    (2018,33) (2019,33) (2020,32) (2021,31) (2022,35) (2023,35)
+    (2024,35) (2025,35)
+};
+\end{axis}
+\end{tikzpicture}
+\scriptsize La tarifa general no incluye sobretasas ni tarifas sectoriales.
+\note{[Sources] DIAN, Renta Personas Jurídicas, https://www.dian.gov.co/impuestos/sociedades/Paginas/Renta-personas-juridicas.aspx, consultado el 5 de agosto de 2026.}
+\end{frame}

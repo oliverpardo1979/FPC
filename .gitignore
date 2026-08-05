@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+output/pdf/main.pdf
+output/render*/
+output/qa*/
